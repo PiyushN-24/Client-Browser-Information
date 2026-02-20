@@ -130,7 +130,7 @@ pipeline {
 
                     docker run -d \
                       --name bootstrap-app \
-                      -p 8080:8080 \
+                      -p 8010:8080 \
                       --restart unless-stopped \
                       $IMAGE_NAME:latest
                 '''
