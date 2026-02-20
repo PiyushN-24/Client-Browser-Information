@@ -17,14 +17,17 @@ pipeline {
         /* ---------------- CHECKOUT ---------------- */
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/PiyushN-24/DevSecOps-CI-CD-Pipeline.git'
+                git branch: 'master', url: 'https://github.com/PiyushN-24/Client-Browser-Information.git'
             }
         }
 
         /* ---------------- SECRET SCAN ---------------- */
-        stage('Secrets Scan (Gitleaks)') {
+        stage('Pre-Commit Security Scan (Gitleaks)') {
             steps {
-                sh 'gitleaks detect --source . --no-git --redact'
+                sh '''
+                   echo "Using pre-commit from: $(which pre-commit)" 
+                   pre-commit run --all-files
+                '''
             }
         }
 
