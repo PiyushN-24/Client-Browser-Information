@@ -1,7 +1,7 @@
 # ---------- Build Stage ----------
 FROM maven:3.9.6-eclipse-temurin-21 AS builder
 WORKDIR /build
-COPY BootStrap .
+COPY . .
 RUN mvn clean package -DskipTests
 
 # ---------- Runtime Stage ----------
