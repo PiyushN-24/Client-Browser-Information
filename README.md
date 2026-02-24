@@ -1,4 +1,4 @@
-# DevSecOps CI/CD Pipeline
+# Client Browser Information
 
 ![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker&style=flat-square)
 ![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-red?logo=jenkins&style=flat-square)
@@ -32,7 +32,7 @@ This project demonstrates how to combine:
 - 📤 Automatic DockerHub image push
 
 ## Jenkins CI/CD Pipeline Architecture
-![CI/CD Pipeline](/home/dhaninfo/TheRecker/Projcets/Client-Browser-Information/images/Client-Info.png)
+![CI/CD Pipeline](/images/Client-Info.png)
 
 ## Prerequisites
 Install the following tools on your local system:
