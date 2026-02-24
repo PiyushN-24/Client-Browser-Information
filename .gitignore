@@ -1,0 +1,117 @@
+# =========================
+# Java
+# =========================
+*.class
+*.log
+
+# =========================
+# Maven
+# =========================
+target/
+*.jar
+*.war
+*.ear
+dependency-reduced-pom.xml
+
+# =========================
+# IDEs
+# =========================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+secrets.*
+credentials.*
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+*.pid
+
+# =========================
+# Jenkins
+# =========================
+jenkins_home/
+workspace/
+
+# =========================
+# Node (if frontend assets exist)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Python / pre-commit
+# =========================
+__pycache__/
+.venv/
+venv/
+.envrc
+
+# =========================
+# SonarQube
+# =========================
+.sonar/
+sonar-report.json
+
+# =========================
+# Trivy
+# =========================
+.trivycache/
+
+# =========================
+# Build Tools
+# =========================
+.gradle/
+build/
+
+# =========================
+# Temp / Backup
+# =========================
+*.tmp
+*.bak
+*.old
+*~
+
+# =========================
+# Security Reports
+# =========================
+gitleaks-report.json
+trivy-report.json
+dependency-check-report.*
