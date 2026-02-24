@@ -139,9 +139,6 @@ pipeline {
     }
 
     post {
-        always {
-            sh 'docker system prune -af || true'
-        }
         success {
             echo "✅ Java DevSecOps Pipeline Completed Successfully"
         }
